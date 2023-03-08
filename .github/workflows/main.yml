@@ -18,5 +18,10 @@ jobs:
 
     # Build project
 
+    - name: Building project
+      run :
+        cmake ..
+        make
+
     # Run tests
 
