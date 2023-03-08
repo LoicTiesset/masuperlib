@@ -18,10 +18,8 @@ jobs:
 
     # Build project
 
-    - uses : actions/checkout@v2
-
     - name: Building project
-      run :
+      run : |
         cmake ..
         make
 
