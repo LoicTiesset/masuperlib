@@ -14,6 +14,11 @@ jobs:
     # Build Doxygen documentation
     # mattnotmitt/doxygen-action
     # https://github.com/marketplace/actions/doxygen-action
+    
+    - uses: mattnotmitt/doxygen-action@v1.9.5
+    - name : Build Doxygen doc
+      run : |
+        echo doxygen build
 
     # Deploy Doxygen documentation
     # peaceiris/actions-gh-pages
