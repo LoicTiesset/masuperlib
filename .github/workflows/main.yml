@@ -15,10 +15,13 @@ jobs:
       run: |
         sudo apt-get update 
         sudo apt-get install -yq cmake catch2
-        sudo cmake ..
-        sudo make
 
     # Build project
+    
+    - name: Build projects
+      run : |
+        cmake ..
+        make
     
     # Run tests
 
