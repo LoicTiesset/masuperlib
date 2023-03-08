@@ -1,3 +1,4 @@
+
 name: Build project and run tests
 
 on:
@@ -15,8 +16,12 @@ jobs:
       run: |
         sudo apt-get update 
         sudo apt-get install -yq cmake catch2
-
+        
     # Build project
-
+    
+    - name: Build projects
+      run : |
+        cmake CMakeLists.txt
+        make
+    
     # Run tests
-
