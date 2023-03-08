@@ -19,7 +19,7 @@ jobs:
     # Build project
 
     - name: Building project
-      run : |
+      run: |
         cmake ..
         make
 
