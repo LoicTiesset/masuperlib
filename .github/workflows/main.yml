@@ -20,7 +20,7 @@ jobs:
     
     - name: Build projects
       run : |
-        cmake ..
+        cmake CMakeLists.txt
         make
     
     # Run tests
